@@ -22,7 +22,7 @@ app.layout = html.Div([
         dcc.Graph(
             id='choropleth'
         ),
-    ])
+    ],style={"width" : "100%"})
 ])
 
 @app.callback(Output('choropleth', 'figure'),
